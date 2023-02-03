@@ -71,14 +71,14 @@ public class Main {
             for (int i = 1; i <= 10; i++) {
                 try {
                     String xpath = "//*[@id=\"my_jlpt_list_template\"]/li[" + i + "]";
-                    String pronunciation = driver.findElement(By.xpath(xpath + "/div/a")).getText();
+                    String kana = driver.findElement(By.xpath(xpath + "/div/a")).getText();
                     String kanji = driver.findElement(By.xpath(xpath + "/div/span[1]")).getText();
                     if (kanji.contains("듣기")) // 한자 없는 경우 "듣기" 또는 "발음듣기"로 가져와짐
-                        kanji = pronunciation; // 이와 같은 경우 한자 <- 발음으로 대체
+                        kanji = kana; // 이와 같은 경우 한자 <- 발음으로 대체
                     String meaning = driver.findElement(By.xpath(xpath + "/ul/li/p")).getText();
                     if (pagenum != 1 || i != 1)
                         writer.write(",\n");
-                    writer.write("{\n\t\"pronunciation\": \"" + pronunciation + "\",\n\t\"kanji\": \"" + kanji + "\",\n\t\"meaning\": \"" + meaning + "\"\n}");
+                    writer.write("{\n\t\"kana\": \"" + kana + "\",\n\t\"kanji\": \"" + kanji + "\",\n\t\"meaning\": \"" + meaning + "\"\n}");
                 } catch (NoSuchElementException e) {
                     System.out.println("Crawling Complete(or error point) - [page / i] = [ " + pagenum + " / " + (i - 1) + " ]");
                     writer.write("\n]");

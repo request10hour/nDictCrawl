@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="653fa19b-fb79-43de-87cb-209fdbe37a64" name="Changes" comment="Correct invalid json format">
+    <list default="true" id="653fa19b-fb79-43de-87cb-209fdbe37a64" name="Changes" comment="Correcting inappropriate expressions(pronunciation -&gt; kana)">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -72,7 +73,8 @@
       <workItem from="1674766602342" duration="147000" />
       <workItem from="1674766809329" duration="7311000" />
       <workItem from="1675360462296" duration="9428000" />
-      <workItem from="1675408519948" duration="31000" />
+      <workItem from="1675408519948" duration="89000" />
+      <workItem from="1676600720334" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="First completed">
       <created>1675368098291</created>
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675371181488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Correcting inappropriate expressions(pronunciation -&gt; kana)">
+      <created>1675408601930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675408601930</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First completed" />
     <MESSAGE value="Correct invalid json format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct invalid json format" />
+    <MESSAGE value="Correcting inappropriate expressions(pronunciation -&gt; kana)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcting inappropriate expressions(pronunciation -&gt; kana)" />
   </component>
 </project>
